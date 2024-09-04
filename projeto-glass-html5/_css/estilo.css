@@ -1,16 +1,7 @@
-@charset "UTF-8";
-/* 
-aula 10
-aula 11
-aula 12
-aula 13
-*/
-
-/* Corpo do site */
-
+@charset "UTF-8"
 body {
-   background-color: #dddddd;
-   color: rgb (0,0,0,1);
+    background-color: white;
+    color: rgba (0, 0, 0, 1);
 }
 
 p {
@@ -18,29 +9,19 @@ p {
     text-indent: 50px;
 }
 
-/* Formatação da interface */
-
 div#interface {
-    width: 900px;
+    width: 400px;
     background-color: #ffffff;
-    margin: -20px auto 10px auto;
-    box-shadow: 0px 0px 10px black;
-    padding: 10px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 
 }
 
-header#cabecalho img#icone {
-    position: absolute; 
-    left: 780px;
-    top: 40px
-    
-}
-
-/* Formatação de imagens com legendas */
+/* FORMATAÇÃO DE IMAGENS */
 
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px black;    
 }
 
 figure.foto-legenda img {
@@ -52,61 +33,46 @@ figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0px;
-    background-color: rgb(0,0,0,.4);
+    background-color: rgb(0, 0, 0, .4);
     color: white;
     width: 100%;
     height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
+    padding: 10xp;
 }
 
-figure.foto-legenda:hover figcaption {
-   opacity: 1;
+figure.foto-legenda:hover figcaption{
+    opacity: 100%;
 }
 
-/* Formatação do Menu */
-
-bav#menu {
-    display: block;
-  
-}
-
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 300px;
-}
-
-nav#menu li {
-    display: inline-block;
-    background-color: #dddddd;
-    padding: 10px;
-    margin: 2px; 
-    transition: background-color 1s;   
-    /*
-    * Prefixed by https://autoprefixer.github.io
-    * PostCSS: v8.4.14,
-    * Autoprefixer: v10.4.7
-    * Browsers: last 4 version
-    */
-    -webkit-transition: background-color 1s;
-    -o-transition: background-color 1s;
-}
-
-nav#menu li:hover {
-    background-color: #606060;
-}
+/* FORMATAÇÃO DO MENU */
 
 nav#menu h1 {
     display: none;
 }
 
-nav#menu a {
+nav#menu ul {
+    list-style: none;
+    position: absolute;
+    text-transform: uppercase;
+    top: -20px;
+    left: 370px;
+    
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+mav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#memu a {
     color: #000000;
-    text-decoration: none;
+    tex-decoration: none;
 }
 
 nav#menu a:hover {
