@@ -1,7 +1,15 @@
-@charset "UTF-8";
 /*
-aula 16
+aula 17
+aula 18
 */
+
+@charset "UTF-8";
+/* Formatação de fontes */
+@import url (https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap);
+@font-face {
+   font-family: 'FonteLogo';
+   src: url("../_fonts/Bubblegum-sans-regular.otf");
+} 
 
 /* Corpo do site */
 
@@ -38,7 +46,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-    font-family: Arial, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgb(0,0,0,.6);
@@ -47,7 +55,7 @@ header#cabecalho h1 {
 }
 
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: Titillium Web, sans-serif;
     color: #888888;
     font-size: 15pt;
     margin-top: 0px;
@@ -128,4 +136,29 @@ nav#menu a {
 
 nav#menu a:hover {
     color: #ffffff;
+}
+
+/* Formatação da secção */
+
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+asside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
 }
