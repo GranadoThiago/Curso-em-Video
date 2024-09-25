@@ -1,4 +1,4 @@
-@charset "UTF-8"; /* 11:22  gggggg*/
+@charset "UTF-8"; /* inicio */
 
 section#conteudo {
   width: 1000px;
@@ -6,6 +6,12 @@ section#conteudo {
 }
 
 iframe#frame-spec {
-  width: 400px;
+  width: 410px;
   height: 280px;
+  border: none;
+  overflow: hidden;
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+  display: none;
 }
