@@ -52,9 +52,15 @@
       <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações</p>.
     </section>
     <section id="conteudo">
-      <img src="_imagens/glass-esquema-marcado.jpg" alt="Google Glass especificações.">
+      <img src="_imagens/glass-esquema-marcado.jpg" alt="Google Glass especificações." usemap="#meumapa">
+      <map name="meumapa"><!-- <area> possui 03 shape = Retângulos, Círculos e Poligonal -->
+        <area shape="rect" coords="179,202, 270,260" href="google-glass.html#tela" alt="Tela" target="janela"><!-- <shape="rect"> Area de Retângulos, pega dois pontos de x y -->
+        <area shape="circle" coords="162,244, 12" href="google-glass.html#camera" alt="Camera" target="janela"><!-- <shape="circle"> Area de Círculos, pega um ponto x y no centro e o raio -->
+        <area shape="circle" coords="68,41, 12" href="google-glass.html#gadgets" alt="Gadgets" target="janela">
+        <area shape="poly" coords="28,143, 83,216, 84,249, 27,169" href="google-glass.html#sensores" alt="Sensores" target="janela"><!-- <shape="poly"> Area de Poligonal, pega x y de vários pontos -->
+      </map>
+
       <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
-    
     </section>
     <footer id="rodape">
       <p>Copyright 2013 - by Gustavo Guanabara<br>
