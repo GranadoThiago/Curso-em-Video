@@ -43,7 +43,7 @@ Aplicação da Função para mudar as imagens do menu:
                     <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                 </hgroup>
             </header>
-            <form>
+            <form method="post" id="fContato" action="mailto:learn.now.e@gmail.com">
                 <fieldset>
                     <legend id="usuario">Identificação do Usuário</legend>
                         <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Digite o seu nome"></p>
@@ -59,13 +59,43 @@ Aplicação da Função para mudar as imagens do menu:
                     <legend id="endereco">Endereço do Usuário</legend>
                         <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Dígite o seu endereço"></p>
                         <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999999"></p>
-                        <p>Estado:</p>             
-                        <p>Cidade:</p>                       
+                        <p>
+                            <label for="cEst">Estado:</label>
+                                <select name="cEst" id="cEst">
+                                    <optgroup label="Região Sudeste">
+                                        <option value="RJ" selected>Rio de Janeiro</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="DF">Distrito Federal</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sul">
+                                        <option value="PR">Paraná</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                    </optgroup>
+                                </select>
+                        </p>             
+                        <p>
+                            <label for="cCid">Cidade:</label>
+                                <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Digite a sua cidade" list="cidades">
+                                <datalist id="cidades">
+                                    <option value="Rio de Janeiro"></option>
+                                    <option value="Nova Iguaçu"></option>
+                                    <option value="Niteroi"></option>
+                                    <option value="São Paulo"></option>
+                                </datalist>
+                        </p>                       
                 </fieldset>
                 <fieldset>
                     <legend id="mensagem">Mensagem do Usuário</legend>
-                        Grau de Urgência:
-                        Mensagem:
+                        <p>
+                            <label for="cUrg">Grau de Urgência: </label>
+                                Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"> Max
+                        </p>
+                        <p>
+                            <label for="cMsg">Mensagem:</label>
+                                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite a sua mensagem"></textarea>
+                        </p>
                 </fieldset>
                 <fieldset>
                     <legend id="pedido">Quero um Google Glass</legend>
