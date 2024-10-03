@@ -1,47 +1,99 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html> <!-- 19:00 -->
+<html lang="pt-br">
+<head>     
+    <meta charset="UTF-8"/>
+    <title>Tudo sobre o Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+    <header id="cabecalho"> 
+        <hgroup> 
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+    
+        <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="">
+<!--
+Aplicação da Função para mudar as imagens do menu:
+    Chama a imagens quando o mouse passar por cima: onmouseover="mudaFoto('_imagens/home.png')"            
+    Retorna a imagem da página ativa:               onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"
+-->
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto
+                ('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Glass > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+            <form>
+                <fieldset>
+                    <legend id="usuario">Identificação do Usuário</legend>
+                        <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Digite o seu nome"></p>
+                        <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+                        <p>E-mail: <input type="email" name="tMail" id="cMail" size="20 " maxlength="40" placeholder="Digite o seu E-mail"></p>
+                        <fieldset id="sexo"><legend>Sexo</legend>                          
+                            <input type="radio" name="tSexo" id="cMasc" checked><label for="cMasc">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                        </fieldset> 
+                            <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></p>
+                </fieldset>
+                <fieldset>
+                    <legend id="endereco">Endereço do Usuário</legend>
+                        Logradouro:
+                        Número:
+                        Estado:
+                        Cidade:
+                </fieldset>
+                <fieldset>
+                    <legend id="mensagem">Mensagem do Usuário</legend>
+                        Grau de Urgência:
+                        Mensagem:
+                </fieldset>
+                <fieldset>
+                    <legend id="pedido">Quero um Google Glass</legend>
+                        Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                </fieldset>
+                
+            
+            
+            
+           
+            
+            
+            
+            
+            [BOTÃO ENVIAR]
+            
+            
+            </form>
+        </article>
+    </section>
 
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+    <footer id="rodape">
+        <p>Copyright 2013 - by Gustavo Guanabara<br>
+        Facebook | Twitter</p>
+    </footer>
+</div>
+</body>
+</html>
