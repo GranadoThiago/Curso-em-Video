@@ -1,4 +1,4 @@
-**Repositório das aulas do Curso em video sobre HTML.**
+**Repositório das aulas do Curso em Video sobre HTML.**
 
 _____________________
 Linguagens | HTML
