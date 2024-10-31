@@ -38,9 +38,9 @@ div#interface {
 }
 
 header#cabecalho img#icone {
-    position: absolute; 
-    left: 780px;
-    top: 70px    
+    position: relative; 
+    left: 740px;
+    top: -40px    
 }
 
 header#cabecalho {
